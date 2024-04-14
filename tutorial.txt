@@ -1,0 +1,8 @@
+Donwload 7zip and add it to the path https://www.7-zip.org/a/7z2301-x64.exe
+
+
+1. py -m virtualenv venv (If not found install with "py -m pip install virtualenv")
+2. venv\scripts\activate
+3. py -m pip install -r requirements.txt
+4. Click on setup.bat
+5. Click on start.bat
