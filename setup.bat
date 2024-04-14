@@ -41,5 +41,12 @@ move "ffmpeg-7.0-full_build\ffmpeg-7.0-full_build\bin\ffplay.exe" "ffplay.exe"
 move "ffmpeg-7.0-full_build\ffmpeg-7.0-full_build\bin\ffprobe.exe" "ffprobe.exe"
 rmdir /s /q "ffmpeg-7.0-full_build"
 
+REM Setup virtual environment and install dependencies
+echo Setting up virtual environment...
+virtualenv venv
+call venv\Scripts\activate
+echo Installing dependencies...
+pip install -r requirements.txt
+
 echo Setup complete!
 pause
