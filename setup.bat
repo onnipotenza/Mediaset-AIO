@@ -43,6 +43,7 @@ rmdir /s /q "ffmpeg-7.0-full_build"
 
 REM Setup virtual environment and install dependencies
 echo Setting up virtual environment...
+cd ".."
 py -m pip install virtualenv
 py -m virtualenv venv 
 call venv\Scripts\activate
